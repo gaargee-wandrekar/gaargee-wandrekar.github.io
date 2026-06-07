@@ -1,0 +1,27 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Local Claude Code settings
+.claude/
+
+# Python tooling (PDF compression venv, scripts)
+.pdfvenv/
+*.py
+__pycache__/
+
+# Personal documents (keep private — not for public hosting)
+Gaargee_Wandrekar_Resume copy.pdf
+*resume*.pdf
+*Resume*.pdf
+*CV*.pdf
+
+# Secrets / credentials / tokens — never commit these
+.env
+.env.*
+*.env
+*secret*
+*token*
+*credentials*
+*.pem
+*.key
