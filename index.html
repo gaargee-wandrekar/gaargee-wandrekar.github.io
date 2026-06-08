@@ -238,6 +238,7 @@
     .sec-head .label::before { content: attr(data-n); font-family: 'Instrument Serif', serif; font-size: 1.1rem; letter-spacing: 0; color: var(--accent-2); }
     .sec-head h2 { font-size: clamp(1.9rem, 4.5vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em; margin-top: 12px; line-height: 1.08; }
     .sec-head h2 em { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; }
+    .sec-head p { color: var(--text-soft); font-size: 1.05rem; margin-top: 14px; }
 
     /* ====================== ABOUT ====================== */
     .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; align-items: start; }
@@ -376,9 +377,9 @@
         <a href="#top" class="logo">Gaargee Wandrekar<span>.</span></a>
         <div class="nav-links" id="navLinks">
           <a href="#about">About</a>
-          <a href="#projects">Work</a>
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
           <a href="#contact" class="btn-sm">Let's talk</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
@@ -463,7 +464,7 @@
         </div>
         <div class="about-grid">
           <div class="about-text">
-            <p>I'm a performance and content marketer in Madrid, finishing my <strong>Master's in Strategic Marketing &amp; Communication at IE Business School</strong>. As a key account manager I owned paid acquisition end-to-end, managing over <strong>€1M in annual ad spend</strong> across Google and Meta and holding a steady <strong>4–5X ROAS</strong> through constant testing.</p>
+            <p>I'm a performance and content marketer in Madrid, finishing my <strong>Masters in Strategic Marketing &amp; Communication at IE Business School</strong>. As a key account manager I owned paid acquisition end-to-end, managing over <strong>€1M in annual ad spend</strong> across Google and Meta and holding a steady <strong>4–5X ROAS</strong> through constant testing.</p>
             <p>I work where data-driven campaign ownership meets creative direction and AI-native execution. My team recently <strong>won IE's pilot AI Marketing Lab</strong> by building a fully working AI product with Claude Code. I love turning strategy into numbers, then directing the creative that moves them.</p>
             <div class="skills">
               <span class="chip">Google Ads</span>
@@ -492,26 +493,14 @@
       </div>
     </section>
 
-    <!-- ====================== PROJECTS / WORK ====================== -->
-    <section id="projects" class="reveal">
+    <!-- ====================== WORK (professional) ====================== -->
+    <section id="work" class="reveal">
       <div class="wrap">
         <div class="sec-head">
           <span class="label" data-n="02">Work</span>
-          <h2>Selected <em>work</em></h2>
+          <h2>Professional <em>work</em></h2>
+          <p>Real clients, real budgets, real results: paid acquisition, creative direction, and brand.</p>
         </div>
-
-        <div class="projects">
-          <article class="project featured">
-            <span class="idx" aria-hidden="true">★</span>
-            <span class="tag">AI Marketing Lab · 1st Place 🏆</span>
-            <h3>RC Celta de Vigo: AI Ticket-Recovery Platform</h3>
-            <p>Winner of IE Business School's pilot AI Marketing Lab. My team built a working MVP with Claude Code: an AI platform that resells returned seats for sold-out matches. We delivered the product, the go-to-market campaign, and the live final demo end-to-end.</p>
-            <div class="stack"><span>Claude Code</span><span>Product MVP</span><span>Campaign Strategy</span><span>Go-to-Market</span></div>
-            <div class="links"><a href="https://juanpablobeni-web.github.io/avisame/landing.html" target="_blank" rel="noopener">View live MVP →</a></div>
-          </article>
-        </div>
-
-        <div class="work-group-label">Professional highlights</div>
         <div class="projects">
           <article class="project">
             <span class="idx" aria-hidden="true">01</span>
@@ -537,9 +526,27 @@
             <div class="stack"><span>Google Search</span><span>Google Display</span><span>Brand Awareness</span></div>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="work-group-label">Master's strategy &amp; brand projects · IE Business School</div>
+    <!-- ====================== PROJECTS (Masters, IE Business School) ====================== -->
+    <section id="projects" class="reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="label" data-n="03">Projects</span>
+          <h2>Masters <em>projects</em></h2>
+          <p>Brand and strategy work from IE Business School, led by a first-place, AI-built product.</p>
+        </div>
         <div class="projects">
+
+          <article class="project featured">
+            <span class="idx" aria-hidden="true">★</span>
+            <span class="tag">AI Marketing Lab · 1st Place 🏆</span>
+            <h3>RC Celta de Vigo: AI Ticket-Recovery Platform</h3>
+            <p>Winner of IE Business School's pilot AI Marketing Lab. My team built a working MVP with Claude Code: an AI platform that resells returned seats for sold-out matches. We delivered the product, the go-to-market campaign, and the live final demo end-to-end.</p>
+            <div class="stack"><span>Claude Code</span><span>Product MVP</span><span>Campaign Strategy</span><span>Go-to-Market</span></div>
+            <div class="links"><a href="https://juanpablobeni-web.github.io/avisame/landing.html" target="_blank" rel="noopener">View live MVP →</a></div>
+          </article>
 
           <article class="project">
             <span class="idx" aria-hidden="true">01</span>
@@ -579,7 +586,7 @@
 
           <article class="project">
             <span class="idx" aria-hidden="true">05</span>
-            <span class="tag">Brand Strategy · Nike</span>
+            <span class="tag">Brand Strategy · Converse</span>
             <h3>Converse: Preserve the Icon</h3>
             <p>A repositioning for creative, future-focused youth that modernises comfort, circular design, and creator culture while protecting the Chuck Taylor icon. The full 4Ps plan ran from RENEW recycled materials to "Creative Labs" experiential retail.</p>
             <div class="stack"><span>Brand Positioning</span><span>4Ps</span><span>Competitive Analysis</span></div>
@@ -597,7 +604,7 @@
 
           <div>
             <div class="sec-head" style="margin-bottom: 36px;">
-              <span class="label" data-n="03">Experience</span>
+              <span class="label" data-n="04">Experience</span>
               <h2>Where I've <em>worked</em></h2>
             </div>
             <div class="timeline">
@@ -635,13 +642,13 @@
 
           <div id="education">
             <div class="sec-head" style="margin-bottom: 36px;">
-              <span class="label" data-n="04">Education</span>
+              <span class="label" data-n="05">Education</span>
               <h2>Academic <em>background</em></h2>
             </div>
             <div class="timeline">
               <div class="job">
                 <div class="when">2025 – 2026 · Madrid, Spain</div>
-                <h3>Master's, Strategic Marketing &amp; Communication</h3>
+                <h3>Masters, Strategic Marketing &amp; Communication</h3>
                 <div class="org">IE Business School</div>
                 <ul>
                   <li>Winner (1st place), IE's pilot AI Marketing Lab, building a working MVP with Claude Code.</li>
