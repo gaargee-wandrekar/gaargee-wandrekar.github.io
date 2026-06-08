@@ -25,3 +25,6 @@ Gaargee_Wandrekar_Resume copy.pdf
 *credentials*
 *.pem
 *.key
+
+# Large local design exports (over GitHub 100MB limit)
+Untitled design*.pdf
