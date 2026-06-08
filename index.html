@@ -265,7 +265,7 @@
     .project:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: transparent; }
     .project:hover::before { transform: scaleX(1); }
     .project .idx { position: absolute; top: 18px; right: 26px; font-family: 'Instrument Serif', serif; font-size: 2.6rem; color: var(--bg-soft); line-height: 1; z-index: 0; }
-    .project-thumb { display: block; width: calc(100% + 60px); margin: -30px -30px 22px; aspect-ratio: 16 / 9; object-fit: cover; background: var(--bg-soft); border-bottom: 1px solid var(--border); }
+    .project-thumb { display: block; width: calc(100% + 60px); height: auto; margin: -30px -30px 22px; flex: none; background: var(--bg-soft); border-bottom: 1px solid var(--border); }
     .project.featured { grid-column: 1 / -1; background: linear-gradient(180deg, var(--accent-soft), var(--card) 55%); }
     .project > * { position: relative; z-index: 1; }
     .project .tag { font-size: 0.76rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.07em; }
@@ -321,16 +321,16 @@
 
     /* ====================== BACK TO TOP ====================== */
     .to-top {
-      position: fixed; left: 18px; bottom: 18px; z-index: 95;
-      width: 48px; height: 48px; border-radius: 50%;
-      background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow);
-      cursor: pointer; display: grid; place-items: center; color: var(--text); font-size: 1.2rem; line-height: 1;
+      position: fixed; left: 20px; bottom: 20px; z-index: 95;
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--grad); border: none; box-shadow: var(--shadow-lg);
+      cursor: pointer; display: grid; place-items: center; color: #fff; font-size: 1.5rem; line-height: 1; font-weight: 700;
       opacity: 0; visibility: hidden; transform: translateY(12px);
-      transition: opacity .3s, transform .3s, visibility .3s, border-color .2s, box-shadow .2s, color .2s;
+      transition: opacity .3s, transform .3s, visibility .3s, box-shadow .2s, filter .2s;
     }
     .to-top.show { opacity: 1; visibility: visible; transform: none; }
-    .to-top:hover { border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow-lg); }
-    @media (max-width: 600px) { .to-top { left: 12px; bottom: 12px; width: 44px; height: 44px; } }
+    .to-top:hover { filter: brightness(1.08); box-shadow: 0 14px 34px -8px rgba(0,0,0,.4); }
+    @media (max-width: 600px) { .to-top { left: 14px; bottom: 14px; } }
 
     /* ====================== SETTINGS PANEL ====================== */
     .settings { position: fixed; right: 18px; bottom: 18px; z-index: 95; }
@@ -813,7 +813,7 @@
       function onScroll() {
         var max = root.scrollHeight - root.clientHeight;
         sp.style.width = (max > 0 ? (root.scrollTop / max) * 100 : 0) + '%';
-        toTop.classList.toggle('show', root.scrollTop > 600);
+        toTop.classList.toggle('show', root.scrollTop > 350);
         ticking = false;
       }
       window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
