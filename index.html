@@ -265,6 +265,7 @@
     .project:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: transparent; }
     .project:hover::before { transform: scaleX(1); }
     .project .idx { position: absolute; top: 18px; right: 26px; font-family: 'Instrument Serif', serif; font-size: 2.6rem; color: var(--bg-soft); line-height: 1; z-index: 0; }
+    .project-thumb { display: block; width: calc(100% + 60px); margin: -30px -30px 22px; aspect-ratio: 16 / 9; object-fit: cover; background: var(--bg-soft); border-bottom: 1px solid var(--border); }
     .project.featured { grid-column: 1 / -1; background: linear-gradient(180deg, var(--accent-soft), var(--card) 55%); }
     .project > * { position: relative; z-index: 1; }
     .project .tag { font-size: 0.76rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.07em; }
@@ -562,7 +563,7 @@
           </article>
 
           <article class="project">
-            <span class="idx" aria-hidden="true">01</span>
+            <img class="project-thumb" src="thumbs/starbucks.jpg" alt="Starbucks strategy deck cover slide" loading="lazy" decoding="async" width="1000" height="563" />
             <span class="tag">Brand Strategy · Go-to-Market</span>
             <h3>Starbucks: Own the Merienda Moment</h3>
             <p>A growth play for Starbucks Spain built on store productivity, not new openings. The idea: own the afternoon "merienda" ritual between grandparents and grandchildren, turning an emotional habit into a projected 1.2% same-store transaction lift.</p>
@@ -571,7 +572,7 @@
           </article>
 
           <article class="project">
-            <span class="idx" aria-hidden="true">02</span>
+            <img class="project-thumb" src="thumbs/kpi.jpg" alt="La Hora de Conectar KPI system deck cover slide" loading="lazy" decoding="async" width="1000" height="563" />
             <span class="tag">Marketing Analytics</span>
             <h3>La Hora de Conectar: KPI System</h3>
             <p>The measurement system behind the Starbucks "La Hora de Conectar" campaign: a cause-and-effect KPI cascade from business to media, a Difference-in-Differences holdout to prove incrementality, and a traffic-light dashboard that maps every metric to an action.</p>
@@ -580,7 +581,7 @@
           </article>
 
           <article class="project">
-            <span class="idx" aria-hidden="true">03</span>
+            <img class="project-thumb" src="thumbs/mcpizza.jpg" alt="McPizza Settle the Debate campaign deck cover slide" loading="lazy" decoding="async" width="1000" height="563" />
             <span class="tag">Integrated Campaign</span>
             <h3>McPizza: Settle the Debate</h3>
             <p>A 360° launch for McDonald's McPizza that turns the eternal pizza-versus-burger fight into a courtroom showdown. "One stop, zero arguments." The idea ran across a hero film, an in-app Late-Night Mode, a Prime Video collaboration, and a physical "Voting Booth" activation.</p>
@@ -589,7 +590,7 @@
           </article>
 
           <article class="project">
-            <span class="idx" aria-hidden="true">04</span>
+            <img class="project-thumb" src="thumbs/mikado.jpg" alt="Mikado Midnight Moments deck cover slide" loading="lazy" decoding="async" width="1000" height="563" />
             <span class="tag">Brand Strategy · Mondelez</span>
             <h3>Mikado: Midnight Moments</h3>
             <p>A Gen Z repositioning of Mikado as a bold late-night "guilty pleasure" ritual. It introduced a Dark Chocolate Sea Salt and Caramel flavour plus gamified social activations (on-pack "Truth or Dare," QR Confessions, a festival moment), all grounded in original survey insight.</p>
@@ -598,7 +599,7 @@
           </article>
 
           <article class="project">
-            <span class="idx" aria-hidden="true">05</span>
+            <img class="project-thumb" src="thumbs/converse.jpg" alt="Converse Preserve the Icon deck cover slide" loading="lazy" decoding="async" width="1000" height="563" />
             <span class="tag">Brand Strategy · Converse</span>
             <h3>Converse: Preserve the Icon</h3>
             <p>A repositioning for creative, future-focused youth that modernises comfort, circular design, and creator culture while protecting the Chuck Taylor icon. The full 4Ps plan ran from RENEW recycled materials to "Creative Labs" experiential retail.</p>
