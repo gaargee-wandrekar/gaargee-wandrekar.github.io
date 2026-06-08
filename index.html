@@ -299,14 +299,12 @@
     .timeline::before { content: ''; position: absolute; left: 20px; top: 12px; bottom: 12px; width: 2px; background: linear-gradient(var(--accent), var(--accent-2)); opacity: .25; }
     .job { position: relative; padding-bottom: 36px; }
     .job:last-child { padding-bottom: 0; }
-    .job::before {
-      content: attr(data-badge); position: absolute; left: -64px; top: 0;
-      width: 42px; height: 42px; border-radius: 12px;
-      background: var(--grad); color: #fff;
-      display: grid; place-items: center;
-      font-size: 0.8rem; font-weight: 800; letter-spacing: 0.02em;
-      border: 3px solid var(--bg);
-      box-shadow: 0 5px 12px -3px color-mix(in srgb, var(--accent) 45%, transparent);
+    .job-logo {
+      position: absolute; left: -64px; top: 0;
+      width: 44px; height: 44px; border-radius: 12px;
+      background: #fff; border: 1px solid var(--border);
+      object-fit: contain; padding: 5px;
+      box-shadow: var(--shadow-sm);
     }
     .job .when { font-size: 0.84rem; color: var(--muted); font-weight: 600; }
     .job h3 { font-size: 1.18rem; font-weight: 700; margin: 5px 0 2px; letter-spacing: -0.01em; }
@@ -533,6 +531,7 @@
         </div>
         <div class="timeline">
           <div class="job" data-badge="PR">
+            <img class="job-logo" src="logos/pearlrain.png" alt="PearlRain Digital logo" loading="lazy" />
             <div class="when">Nov 2023 – Jun 2025 · Pune, India</div>
             <h3>Digital Marketing Specialist</h3>
             <div class="org">PearlRain Digital LLP</div>
@@ -544,18 +543,21 @@
             </ul>
           </div>
           <div class="job" data-badge="CS">
+            <img class="job-logo" src="logos/changing-sky.png" alt="Changing Sky logo" loading="lazy" />
             <div class="when">Aug 2023 – Oct 2023 · Pune, India</div>
             <h3>Digital Marketing Specialist</h3>
             <div class="org">Changing Sky</div>
             <p>Ran social media campaigns end-to-end, lifting engagement and sharpening brand positioning with consistent cross-channel messaging.</p>
           </div>
           <div class="job" data-badge="GW">
+            <img class="job-logo" src="logos/gudworld.webp" alt="GudWorld logo" loading="lazy" />
             <div class="when">Dec 2022 – May 2023 · Pune, India</div>
             <h3>Digital Marketing Lead, Final-Year Project</h3>
             <div class="org">GudWorld (FMCG)</div>
             <p>Led Google Search and Display campaigns from brief to execution, building brand awareness and driving conversions.</p>
           </div>
           <div class="job" data-badge="AV">
+            <img class="job-logo" src="logos/avalara.png" alt="Avalara Technologies logo" loading="lazy" />
             <div class="when">May 2022 – Jul 2022 · Pune, India</div>
             <h3>Marketing Intern</h3>
             <div class="org">Avalara Technologies</div>
@@ -642,6 +644,7 @@
         </div>
         <div class="timeline">
           <div class="job" data-badge="IE">
+            <img class="job-logo" src="logos/ie.jpeg" alt="IE Business School logo" loading="lazy" />
             <div class="when">2025 – 2026 · Madrid, Spain</div>
             <h3>Masters, Strategic Marketing &amp; Communication</h3>
             <div class="org">IE Business School</div>
@@ -651,6 +654,7 @@
             </ul>
           </div>
           <div class="job" data-badge="FL">
+            <img class="job-logo" src="logos/flame.png" alt="FLAME University logo" loading="lazy" />
             <div class="when">2020 – 2023 · Pune, India</div>
             <h3>BBA (Communications), Major in Digital Marketing</h3>
             <div class="org">FLAME University</div>
@@ -660,6 +664,7 @@
             </ul>
           </div>
           <div class="job" data-badge="CV">
+            <img class="job-logo" src="logos/cathedral.webp" alt="Cathedral Vidya School logo" loading="lazy" />
             <div class="when">2018 – 2020 · Lonavala, India</div>
             <h3>IB Diploma Programme</h3>
             <div class="org">Cathedral Vidya School</div>
